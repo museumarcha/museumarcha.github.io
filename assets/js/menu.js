@@ -25,7 +25,7 @@ if (menuButton && closeButton && editorialIndex && pageWrapper) {
   editorialIndex.setAttribute('aria-hidden', 'true');
   menuButton.addEventListener('click', openMenu);
   closeButton.addEventListener('click', () => closeMenu());
-  editorialIndex.querySelectorAll('a[href^="#"]').forEach((link) => {
+  editorialIndex.querySelectorAll('a').forEach((link) => {
     link.addEventListener('click', () => closeMenu(false));
   });
   document.addEventListener('keydown', (event) => {

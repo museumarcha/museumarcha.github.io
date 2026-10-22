@@ -33,7 +33,7 @@ jobs:
         run: |
           mkdir -p _site
           cp index.html README.md PROJECT.md _site/
-          cp -R assets data DOC _site/
+          cp -R assets data DOC pesquisa publicacoes _site/
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v4

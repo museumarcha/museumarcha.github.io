@@ -252,3 +252,19 @@
     *,*::before,*::after{transition-duration:.01ms!important}
     .video-highlight{animation:none;background:#c62828}
 }
+
+/* MARCHA 2026 feature on the institutional home */
+.marcha-feature-layout{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(220px,.55fr);gap:clamp(2rem,8vw,8rem);align-items:center}
+.marcha-feature-copy h2{max-width:13ch;margin:1rem 0 1.3rem;font:400 clamp(2.8rem,5.5vw,5.3rem)/.98 var(--font-serif);letter-spacing:-.045em}
+.marcha-feature-copy h2 em{font-weight:400}
+.marcha-feature-copy>p:not(.section-eyebrow){max-width:46ch;color:var(--color-muted);font:1rem/1.8 var(--font-serif)}
+.marcha-feature-links{display:flex;flex-direction:column;align-items:flex-start;gap:.8rem;margin-top:1.6rem}
+.marcha-feature-links a{font:.7rem/1.4 var(--font-sans);letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--color-text);padding-bottom:.25rem}
+.marcha-feature-links a:hover{opacity:.55}
+.marcha-feature-cover{display:block;width:min(100%,310px);justify-self:center}
+.marcha-feature-cover img{width:100%;height:auto;box-shadow:0 18px 42px rgb(0 0 0 / 16%);transition:transform .25s ease}
+.marcha-feature-cover:hover img{transform:translateY(-4px)}
+.marcha-feature-cover span{display:block;margin-top:.8rem;color:var(--color-muted);font:.58rem/1.4 var(--font-sans);letter-spacing:.12em;text-align:center}
+.site-logo{text-transform:none!important;letter-spacing:.05em}
+.site-footer span:first-child{text-transform:none;letter-spacing:.04em}
+@media(max-width:760px){.marcha-feature-layout{grid-template-columns:1fr;gap:2rem}.marcha-feature-copy h2{font-size:clamp(2.7rem,10vw,4.4rem)}.marcha-feature-cover{width:min(68%,280px)}}

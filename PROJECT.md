@@ -2,7 +2,7 @@
 
 ## Identidade e propósito
 
-MARCHA — Marcha Lenta para Pés Desbravadores — é uma pesquisa continuada sobre cultura, produção artística, memória, documentação, curadoria e circulação de conhecimento. O Museu Virtual Multidisciplinar é a instituição/plataforma que a abriga. O projeto reúne e relaciona obras, projetos, pessoas, lugares, documentos, imagens, textos e dados.
+MARCHA — Marcha Lenta para Pés Desbravadores — é uma pesquisa continuada sobre cultura, produção artística, memória, documentação, curadoria e circulação de conhecimento. museu marcha é a instituição/plataforma que a abriga. O projeto reúne e relaciona obras, projetos, pessoas, lugares, documentos, imagens, textos e dados.
 
 A pergunta orientadora é: **como construir uma infraestrutura digital capaz de documentar, relacionar, pesquisar e tornar pública uma produção cultural multidisciplinar ao longo do tempo?** O site é a face pública de uma estrutura maior de conhecimento.
 
@@ -14,7 +14,10 @@ O protótipo anterior desta conversa usava cartões ilustrados, acento vermelho 
 
 ## Arquitetura do site
 
-- `index.html`: capa, pesquisa, índice do acervo, curadoria, publicações/dados e instituição.
+- `index.html`: página institucional com a seção “Conhecimento com lastro” preservada e chamada para MARCHA 2026.
+- `pesquisa/lei-paulo-gustavo.html`: pergunta, resultados, método e acervo de apoio da pesquisa.
+- `publicacoes/marcha-caderno-1.html`: página da publicação principal; a capa abre o PDF para leitura.
+- O workflow de Pages publica as páginas e os arquivos em `pesquisa/` e `publicacoes/`.
 - `assets/css/base/style.css`: tokens, tipografia e regras globais, copiados da estrutura de referência.
 - `assets/css/components/menu.css`: navegação editorial e transição em cortina, copiados da referência.
 - `assets/css/pages/home.css`: composição da Home e estilos das seções editoriais.
