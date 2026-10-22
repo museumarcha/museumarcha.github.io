@@ -345,3 +345,16 @@
  .marcha-home-archive-grid article,.marcha-home-archive-grid article+article,.marcha-home-archive-grid article:nth-child(3),.marcha-home-archive-grid article:nth-child(4){border-left:0;border-top:1px solid var(--color-border);padding:1rem 0}
  .marcha-home-archive-grid article:first-child{border-top:0}
 }
+
+
+/* Enquadramento consistente ao chegar pelos endereços do menu. */
+#pesquisa,
+#acervo,
+#curadoria,
+#marcha2026 {
+  scroll-margin-top: -3rem;
+}
+
+#publicacao-principal {
+  scroll-margin-top: 2rem;
+}
