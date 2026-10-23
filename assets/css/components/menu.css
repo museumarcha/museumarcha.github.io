@@ -397,24 +397,6 @@
     }
 
 }
-/* Menu principal e avanço para as publicações. */
-.editorial-publications-toggle{
-    display:block;
-    width:max-content;
-    padding:.08em 0;
-    border:0;
-    background:transparent;
-    color:var(--color-text);
-    text-align:left;
-    font-family:var(--font-sans);
-    font-size:clamp(3rem,5vw,5rem);
-    font-weight:400;
-    line-height:.90;
-    letter-spacing:-.03em;
-    cursor:pointer;
-    transition:opacity .18s ease;
-}
-.editorial-publications-toggle:hover{opacity:.45}
 .editorial-publication-subnavigation[hidden]{display:none}
 .editorial-publication-subnavigation{
     display:flex;
@@ -447,36 +429,27 @@
 .editorial-index.publications-open .featured-publication{
     display:none;
 }
+.editorial-publications-item{
+    display:flex;
+    align-items:baseline;
+    gap:1rem;
+}
+.editorial-publications-item>a{
+    flex:1;
+}
+.editorial-publications-toggle{
+    flex:0 0 auto;
+    padding:.25em .1em;
+    border:0;
+    background:transparent;
+    color:var(--color-muted);
+    font:.9rem/1 var(--font-sans);
+    cursor:pointer;
+}
+.editorial-publications-toggle:hover{color:var(--color-text)}
 @media(max-width:768px){
-    .editorial-publications-toggle,.editorial-publication-subnavigation a{
+    .editorial-publication-subnavigation a{
         font-size:clamp(2.2rem,9vw,3.2rem);
     }
 }
-/* Botão de Publicações com a mesma escala e alinhamento dos demais itens. */
-.editorial-navigation .editorial-publications-toggle{
-    display:block!important;
-    align-self:stretch;
-    width:100%;
-    margin:0;
-    padding:.08em 0;
-    border:0;
-    appearance:none;
-    background:transparent;
-    color:var(--color-text);
-    text-align:left;
-    font-family:var(--font-sans)!important;
-    font-size:clamp(3rem,5vw,5rem)!important;
-    font-weight:400!important;
-    line-height:.90!important;
-    letter-spacing:-.03em!important;
-    cursor:pointer;
-    transition:opacity .18s ease;
-}
-.editorial-navigation .editorial-publications-toggle:hover{opacity:.45}
 .editorial-publication-subnavigation a{display:block}
-@media(max-width:768px){
-    .editorial-navigation .editorial-publications-toggle,
-    .editorial-publication-subnavigation a{
-        font-size:clamp(2.2rem,9vw,3.2rem)!important;
-    }
-}
