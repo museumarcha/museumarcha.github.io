@@ -7,20 +7,31 @@
   <meta name="description" content="Curadoria do museu marcha: relações, contexto e circulação de conhecimento.">
   <title>Curadoria · museu marcha</title>
   <link rel="stylesheet" href="assets/css/base/style.css">
-  <link rel="stylesheet" href="assets/css/components/menu.css?v=20261027-multipage1">
+  <link rel="stylesheet" href="assets/css/components/menu.css?v=20261027-menu2">
   <link rel="stylesheet" href="assets/css/pages/home.css?v=20261027-multipage1">
   <link rel="stylesheet" href="assets/css/pages/interior.css">
 </head>
 <body>
   <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
-  <div class="editorial-index" id="editorialIndex" aria-label="Índice editorial">
+  <div class="editorial-index" id="editorialIndex" aria-label="Índice editorial" aria-hidden="true">
     <div class="editorial-index-header"><button class="close-button" id="closeButton" aria-label="Fechar menu">×</button></div>
     <nav class="editorial-navigation" aria-label="Seções do museu marcha">
       <a href="index.html#pesquisa">Pesquisa</a>
       <a href="acervo.html">Acervo</a>
       <a href="curadoria.html" aria-current="page">Curadoria</a>
+      <button class="editorial-publications-toggle" id="publicationsToggle" type="button" aria-expanded="false" aria-controls="publicationNavigation">Publicações</button>
+    </nav>
+    <nav class="editorial-publication-subnavigation" id="publicationNavigation" aria-label="Publicações" hidden>
+      <button class="editorial-publication-back" id="publicationBack" type="button">← Voltar ao menu</button>
+      <a href="pesquisa/marcha-2026.html">MARCHA 2026</a>
+      <a href="pesquisa/lei-paulo-gustavo.html">Lei Paulo Gustavo</a>
+      <a href="publicacoes/marcha-caderno-1.html">Caderno 1</a>
     </nav>
     <div class="editorial-divider"></div>
+    <section class="featured-publication" aria-label="Primeiro programa de pesquisa">
+      <p class="featured-label">Primeiro programa de pesquisa</p>
+      <a href="pesquisa/marcha-2026.html">Marcha Lenta para<br>Pés Desbravadores</a>
+    </section>
     <nav class="secondary-navigation" aria-label="Informações">
       <a href="index.html#instituicao">Sobre</a>
       <a href="index.html#contato">Contato</a>
@@ -38,6 +49,6 @@
     </main>
     <footer class="site-footer"><span>© museu marcha · 2026</span><a href="index.html">VOLTAR AO INÍCIO ↑</a></footer>
   </div>
-  <script src="assets/js/menu.js?v=20261027-multipage1"></script>
+  <script src="assets/js/menu.js?v=20261027-menu2"></script>
 </body>
 </html>

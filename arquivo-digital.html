@@ -7,10 +7,44 @@
   <meta name="description" content="A pesquisa também se faz por dentro: conheça o repositório público MARCHA.">
   <title>Arquivo digital · Museu MARCHA</title>
   <link rel="stylesheet" href="assets/css/base/style.css">
+  <link rel="stylesheet" href="assets/css/components/menu.css?v=20261027-menu2">
   <link rel="stylesheet" href="assets/css/pages/home.css?v=20261027-multipage1">
 </head>
 <body>
   <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+<div class="editorial-index" id="editorialIndex" aria-label="Índice editorial" aria-hidden="true">
+    <div class="editorial-index-header"><button class="close-button" id="closeButton" aria-label="Fechar menu">×</button></div>
+    <nav class="editorial-navigation" aria-label="Seções do museu marcha">
+      <a href="#pesquisa">Pesquisa</a>
+      <a href="acervo.html">Acervo</a>
+      <a href="curadoria.html">Curadoria</a>
+      <button class="editorial-publications-toggle" id="publicationsToggle" type="button" aria-expanded="false" aria-controls="publicationNavigation">Publicações</button>
+    </nav>
+    <nav class="editorial-publication-subnavigation" id="publicationNavigation" aria-label="Publicações" hidden>
+      <button class="editorial-publication-back" id="publicationBack" type="button">← Voltar ao menu</button>
+      <a href="pesquisa/marcha-2026.html">MARCHA 2026</a>
+      <a href="pesquisa/lei-paulo-gustavo.html">Lei Paulo Gustavo</a>
+      <a href="publicacoes/marcha-caderno-1.html">Caderno 1</a>
+    </nav>
+    <div class="editorial-divider"></div>
+    <section class="featured-publication" aria-label="Primeiro programa de pesquisa">
+      <p class="featured-label">Primeiro programa de pesquisa</p>
+      <a href="pesquisa/marcha-2026.html">Marcha Lenta para<br>Pés Desbravadores</a>
+    </section>
+    <nav class="secondary-navigation" aria-label="Informações">
+      <a href="#instituicao">Sobre</a>
+      <a href="#contato">Contato</a>
+      <span>Português</span>
+      <span lang="en">English · em breve</span>
+    </nav>
+  </div>
+  <div id="pageWrapper">
+    <header class="site-header">
+      <nav class="site-nav" aria-label="Navegação principal">
+        <a href="index.html" class="site-logo">museu marcha</a>
+        <button class="menu-button" id="menuButton" aria-expanded="false" aria-controls="editorialIndex">Menu</button>
+      </nav>
+    </header>
   <main class="archive-repository-page" id="conteudo">
     <article class="archive-repository" aria-labelledby="archive-repository-title">
       <div class="archive-repository-index">
@@ -27,5 +61,7 @@
       </div>
     </article>
   </main>
+  </div>
+  <script src="assets/js/menu.js?v=20261027-menu2"></script>
 </body>
 </html>
