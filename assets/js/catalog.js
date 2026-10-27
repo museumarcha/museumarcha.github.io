@@ -20,7 +20,8 @@ const localResearchIndex = [
     type: 'research_edition',
     title: 'Marcha Lenta para Pés Desbravadores',
     year: 2026,
-    status: 'Em curso',
+    status: 'GitHub',
+    href: 'arquivo-digital.html',
     summary: 'Etapa atual do percurso de pesquisa.'
   }
 ];
@@ -48,9 +49,16 @@ function renderResearchIndex(items) {
 
     const meta = document.createElement('p');
     meta.className = 'edition-meta';
-    const status = document.createElement('span');
+    const status = document.createElement(item.href ? 'a' : 'span');
+    status.className = item.href ? 'edition-status-link' : 'edition-status';
     status.textContent = item.status;
-    meta.append(status, item.type.split('_').join(' '));
+    if (item.href) {
+      status.href = item.href;
+      status.setAttribute('aria-label', 'Abrir a apresentação do repositório MARCHA');
+      meta.append(status);
+    } else {
+      meta.append(status, item.type.split('_').join(' '));
+    }
 
     row.append(year, title, description, meta);
     return row;
