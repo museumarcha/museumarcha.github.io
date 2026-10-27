@@ -436,7 +436,7 @@
     .archive-repository-page{padding:2rem 0}
 }
 
-@media(max-width:960px){
+@media(max-width:1100px){
     .archive-repository-page .archive-repository{grid-template-columns:1fr;gap:1.4rem}
     .archive-repository-page .archive-repository-index{display:grid;grid-template-columns:1fr auto;align-items:start}
     .archive-repository-page .archive-repository-index>.section-eyebrow{grid-column:1}
